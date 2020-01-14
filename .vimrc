@@ -62,6 +62,13 @@ map <F4> <Esc>:TlistToggle<Cr>
 set mouse=a
 nnoremap <F5> :exec &mouse=='a' ? ':set mouse-=a' : ':set mouse=a'<CR>
 
+" resize horzontal split window
+nmap <C-Up> <C-W>-<C-W>-
+nmap <C-Down> <C-W>+<C-W>+
+" resize vertical split window
+nmap <C-Right> <C-W>><C-W>>
+nmap <C-Left> <C-W><<C-W><
+
 set path+=/usr/local/opt/ffmpeg/include
 set path+=/Volumes/Code/kernel/include
 set path+=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
