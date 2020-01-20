@@ -72,6 +72,9 @@ nmap <C-Left> <C-W><<C-W><
 " open recent used file
 nmap <C-n> :tabedit<CR>,f
 
+nmap <C-h> gT
+nmap <C-l> gt
+
 set path+=/usr/local/opt/ffmpeg/include
 set path+=/Volumes/Code/kernel/include
 set path+=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
