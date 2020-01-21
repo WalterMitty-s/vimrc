@@ -59,3 +59,22 @@ Another options is:
 ```
 sudo apt install vim-gnome-py2
 ```
+
+Error detected while processing function <SNR>29_Tlist_Refresh_Folds
+```shell
+diff --git a/plugin/taglist.vim b/plugin/taglist.vim
+index 59901f6..dd8e72c 100644
+--- a/plugin/taglist.vim
++++ b/plugin/taglist.vim
+@@ -4097,6 +4097,10 @@ endfunction
+ " window. Used after entering a tab. If this is not done, then the folds
+ " are not properly created for taglist windows displayed in multiple tabs.
+ function! s:Tlist_Refresh_Folds()
++    if g:Tlist_Show_One_File
++        return
++    endif
++
+     let winnum = bufwinnr(g:TagList_title)
+     if winnum == -1
+         return
+```
