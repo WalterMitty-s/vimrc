@@ -28,23 +28,13 @@ let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Auto_Open=1
 let Tlist_Use_Right_Window = 0
-"Plug 'inkarkat/vim-mark'
+Plug 'inkarkat/vim-mark'
+Plug 'inkarkat/vim-ingo-library'
 Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
-Plug 'suan/vim-instant-markdown'
-Plug 'iamcco/markdown-preview.vim'
-nmap <silent> <F8> :MarkdownPreview<CR>
-nmap <silent> <F9> :MarkdownPreviewStop<CR>
-let g:mkdp_auto_start = 0
-let g:mkdp_auto_open = 0
-let g:mkdp_auto_close = 1
-let g:mkdp_refresh_slow = 0
-let g:mkdp_command_for_global = 1
-let g:mkdp_open_to_the_world = 1
 call plug#end()
 
 " 显示行数，用f2开启/关闭 "
